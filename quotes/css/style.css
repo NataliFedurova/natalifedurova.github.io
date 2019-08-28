@@ -228,13 +228,13 @@ h3 span {
     font-weight: 700;
     line-height: 48px;
     padding-top: 130px;
-    padding-left: 248px;
-    padding-right: 164px;
+    padding-left: 100px;
+    padding-right: 120px;
 }
 
 .flex-fold-item .name {
     padding-top: 48px;
-    padding-left: 250px;
+    padding-left: 102px;
     font-weight:200;
 }
 
@@ -245,7 +245,7 @@ h3 span {
     width: 796px;
     height: 650px; 
     display: block;
-    margin-right: 151px;
+    /*margin-right: 151px;*/
 }
 
 .fold-4 {
