@@ -7,28 +7,71 @@
     <title>Quotes</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:700,900|Montserrat:400,700|Raleway:100,200,300,400,400i,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="header">
-        <div class="nav">
-            <div class="nav-top">
-                <a href="">Quotes</a>
-                <button class="btn-menu"></button>
+    <div class="wrapper-slick">
+        <div class="sl__header sl__header__1">
+            <div class="nav">
+                <div class="nav-top">
+                    <a href="">Quotes</a>
+                    <button class="btn-menu"></button>
+                </div>
+            </div>
+            <div class="top-title">
+                <h1>Smile</h1>
+                <h2>it costs you nothing</h2>
             </div>
         </div>
-        <div class="top-title">
-            <h1>Smile</h1>
-            <h2>it costs you nothing</h2>
+        <div class="sl__header sl__header__2">
+            <div class="nav">
+                <div class="nav-top">
+                    <a href="">Quotes</a>
+                    <button class="btn-menu"></button>
+                </div>
+            </div>
+            <div class="top-title">
+                <h1>Smile</h1>
+                <h2>it costs you nothing</h2>
+            </div>
         </div>
-        <div class="carousel">
-            <ul class="circle">
-                <li class="circle-item"><button><svg viewBox="0 0 512 512" width="20" height="20"><circle r=200 cx=50% cy=50% fill="black"/></svg></button></li>
-                <li class="circle-item"><button><svg viewBox="0 0 512 512" width="20" height="20"><circle r=200 cx=50% cy=50% fill="black"/></svg></button></li>
-                <li class="circle-item"><button><svg viewBox="0 0 512 512" width="20" height="20"><circle r=200 cx=50% cy=50% fill="black"/></svg></button></li>
-                <li class="circle-item"><button><svg viewBox="0 0 512 512" width="20" height="20"><circle r=200 cx=50% cy=50% fill="black"/></svg></button></li>
-                <li class="circle-item"><button><svg viewBox="0 0 512 512" width="20" height="20"><circle r=200 cx=50% cy=50% fill="black"/></svg></button></li>
-            </ul>
+        <div class="sl__header sl__header__3">
+            <div class="nav">
+                <div class="nav-top">
+                    <a href="">Quotes</a>
+                    <button class="btn-menu"></button>
+                </div>
+            </div>
+            <div class="top-title">
+                <h1>Smile</h1>
+                <h2>it costs you nothing</h2>
+            </div>
+        </div>
+        <div class="sl__header sl__header__4">
+            <div class="nav">
+                <div class="nav-top">
+                    <a href="">Quotes</a>
+                    <button class="btn-menu"></button>
+                </div>
+            </div>
+            <div class="top-title">
+                <h1>Smile</h1>
+                <h2>it costs you nothing</h2>
+            </div>
+        </div>
+        <div class="sl__header sl__header__5">
+            <div class="nav">
+                <div class="nav-top">
+                    <a href="">Quotes</a>
+                    <button class="btn-menu"></button>
+                </div>
+            </div>
+            <div class="top-title">
+                <h1>Smile</h1>
+                <h2>it costs you nothing</h2>
+            </div>
         </div>
     </div>
     <div class="header-menu" style="display: none">
@@ -45,6 +88,27 @@
             <button class="btn-close" type="button"></button>
         </div>
     </div>
+
+    
+   <!-- <div class="wrapper-slick">
+        <div class="my-slider">
+            <div class="my-slider_item">
+                <img src="img/bg-1.png" alt="">
+            </div>
+            <div class="my-slider_item">
+                <img src="img/slide-2.png" alt="">
+            </div>
+            <div class="my-slider_item">
+                <img src=img/slide-3.png" alt="">
+            </div>
+            <div class="my-slider_item">
+                <img src="img/slide-4.png" alt="">
+            </div>
+            <div class="my-slider_item">
+                <img src="img/slide-5.png" alt="">
+            </div>
+        </div>
+    </div>-->
     
 
     <div class="fold-2">
@@ -229,15 +293,17 @@
         
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://yastatic.net/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script>
             $(document).ready(function(){
                 $(".btn-menu").click(function(){
-                $(".header").hide();
+                $(".sl__header").hide();
                 $(".header-menu").fadeIn();
             });  
                 $(".btn-close").click(function(){
                 $(".header-menu").hide();
-                $(".header").fadeIn();
+                $(".sl__header").fadeIn();
             });  
 
                 $(".btn-more").click(function(){
@@ -280,6 +346,17 @@
                 $(".grid-item-8").mouseleave(function(){
                 $(".hover-grid-item-8").hide();
             });  
+
+            $('.wrapper-slick').slick({
+                arrows:false,
+                dots: true,
+                infinite: true,
+                autoplay:true,
+                autoplaySpeed: 1000,
+                speed: 2000,
+                fade: true,
+                cssEase: 'linear'
+            })
         }); 
     </script> 
 </body>
