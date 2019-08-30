@@ -31,8 +31,32 @@ button:focus {
     outline: none;
 }
 
-.header {
+.sl__header__1 {
     background-image: url(../img/bg-1.png);
+    background-size: cover;
+    padding-bottom: 104px; 
+}
+
+.sl__header__2 {
+    background-image: url(../img/slide-2.png);
+    background-size: cover;
+    padding-bottom: 104px; 
+}
+
+.sl__header__3 {
+    background-image: url(../img/slide-3.png);
+    background-size: cover;
+    padding-bottom: 104px; 
+}
+
+.sl__header__4 {
+    background-image: url(../img/slide-4.png);
+    background-size: cover;
+    padding-bottom: 104px; 
+}
+
+.sl__header__5 {
+    background-image: url(../img/slide-5.png);
     background-size: cover;
     padding-bottom: 104px; 
 }
@@ -116,6 +140,7 @@ button:focus {
 
 .top-title {
     text-align: right;
+    padding-bottom: 275px;
 }
 
 h1 {
@@ -146,7 +171,7 @@ h2 {
     padding-top: 246px;
 }
 
-.circle {
+/*.circle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,7 +194,19 @@ h2 {
 
 .circle button:hover {
     fill: #ffffff;
-} 
+} */
+
+.wrapper-slick {
+   
+    
+   
+}
+
+.my-slider {
+ background-color: aqua;
+   
+    
+}
 
 .fold-2 {
     text-align: center;
