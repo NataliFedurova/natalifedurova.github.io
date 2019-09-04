@@ -204,3 +204,13 @@
     /*opacity: .75;*/
     color: #fff;
 }
+
+@media (max-width:1100px) {
+    .slick-dots {
+        bottom: 20px;
+    }
+
+    .slick-dots li button:before {
+        font-size: 13px;
+    }
+}
