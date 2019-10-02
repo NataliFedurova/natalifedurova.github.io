@@ -47,7 +47,7 @@ h1 {
                         'c d';
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 80px;
-    grid-row-gap: 0;
+    grid-row-gap: 120px;
     margin: 120px 20px;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
